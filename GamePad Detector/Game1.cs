@@ -176,7 +176,7 @@ namespace GamePad_Detector
             joystick2State = Joystick.GetState(1);
         }
 
-        // Make Axis value be from -1 to 1 instead of -32767 to 32767
+        // Make Axis value be from -1 to 1 instead of -32767 to 32768
         float NormalizeAxisValue(int value)
         {
             return value / 32767f;
