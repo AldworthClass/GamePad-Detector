@@ -59,7 +59,7 @@ namespace GamePad_Detector
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
-            _spriteBatch.DrawString(infoFont, connectedControllers + buttonsPressed, new Vector2(10, 10), Color.Black);
+            _spriteBatch.DrawString(infoFont, connectedControllers, new Vector2(10, 10), Color.Black);
             _spriteBatch.End();
 
             base.Draw(gameTime);
@@ -151,7 +151,6 @@ namespace GamePad_Detector
                 }
 
                 connectedControllers += buttonsPressed + "\n";
-                buttonsPressed = "";
             }
 
         }
